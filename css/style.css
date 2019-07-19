@@ -1,0 +1,105 @@
+.displaynone {
+  display: none !important; }
+
+body, body .header .logo, body .header .team .name, body .header .team .social-icons {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 18px;
+  background-image: url(../img/background.png);
+  background-attachment: fixed;
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: 0 49%; }
+  body .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000; }
+    body .header logo::after {
+      content: "";
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-content: center;
+      justify-content: space-between; }
+    body .header .logo {
+      margin-right: 10px; }
+      body .header .logo img {
+        height: 100px; }
+    body .header .team {
+      display: flex;
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap;
+      width: 230px;
+      height: 100px; }
+      body .header .team .name {
+        text-transform: uppercase; }
+      body .header .team .social-icons li {
+        display: inline-block; }
+        body .header .team .social-icons li a img {
+          height: 35px;
+          opacity: 0.7; }
+        body .header .team .social-icons li a img:hover {
+          opacity: 1; }
+    body .header .menu {
+      display: flex;
+      align-content: center;
+      justify-content: flex-end; }
+      body .header .menu .navul {
+        width: 90%;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between; }
+        body .header .menu .navul li {
+          display: flex;
+          font-size: 1.44em; }
+          body .header .menu .navul li .subscribe-button {
+            margin: auto;
+            font-size: 1.2em;
+            height: 70px;
+            width: 140px; }
+          body .header .menu .navul li a {
+            margin: auto;
+            padding: 0; }
+  body .changecarousel {
+    margin-top: 116px; }
+    body .changecarousel .changeinner .carousel-item img {
+      height: 620px; }
+  body .myform {
+    position: absolute;
+    background-color: aliceblue;
+    top: 20%;
+    left: 20%; }
+  body .achievments {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    opacity: 0.7; }
+  body .our-projects {
+    background-color: aliceblue;
+    width: 100%;
+    height: 800px;
+    opacity: 0.7; }
+  body .footer {
+    display: flex;
+    flex-wrap: nowrap;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 400px; }
+    body .footer .footer1 {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      background-color: black; }
+    body .footer .footer2 {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
