@@ -1,0 +1,75 @@
+@import "../../bower_components/bootstrap/dist/css/bootstrap.css";
+@import "partials/reset.scss";
+@import "partials/magnific-popup.scss";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,300,400,500,700,900&display=swap&subset=cyrillic');
+@import "index.scss";
+@import "training.scss";
+@import "event.scss";
+@import "shop.scss";
+html,
+body {
+    height: 100%;
+}
+body {
+    padding-top: 120px;
+    font-size: 22px;
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 49%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+a {
+    color: black;
+
+}
+a:hover {
+    opacity: .8;
+    color: black;
+    text-decoration: none;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.content {
+    min-height: 100%;
+}
+.modal {
+    top: 5%;
+    .form-control {
+        margin-bottom: 18px;
+    }
+    .form-control:focus {
+        border-color: #000000;
+        box-shadow: 0 0 0 0.2rem rgba(0,0,0,.25);
+    }
+}
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media screen and (max-width: 1199.98px)
+{.container {
+    max-width: 85%;
+}
+}
+// Средние девайсы («таблетки», < 992px) 
+@media screen and (max-width: 992px)
+{
+    .container {
+    max-width: 90%;
+}
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (max-width: 767.98px)
+{.container {
+    max-width: 95%;
+}
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px)
+{
+    .container {
+    max-width: 100%;
+}
+}       

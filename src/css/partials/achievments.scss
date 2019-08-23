@@ -1,0 +1,79 @@
+.achievments {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.featurette-divider {
+    background-color: white;
+}
+.achievments-container:nth-child(2) {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+.featurette-container {
+	flex-wrap: nowrap;
+}
+.ach-video {
+	width: 100%;
+	height: 350px;
+
+}
+.ach-heading {
+	font-size: 5em;
+}
+.ach-featurettes {
+	font-size: 2em;
+}
+.ach-label {
+	font-size: 3em;
+}
+.lead {
+    font-size: 1.7em;
+}
+// Большие девайсы (большие десктопы, < 1200px)
+@media screen and (max-width: 1199.98px)
+{
+	.marketing {
+		font-size: .8em;
+	}
+	.achievments {
+		padding: 20px 0;
+	}
+}
+// Средние девайсы («таблетки», < 992px) 
+@media screen and (max-width: 992px)
+{
+	.marketing {
+		font-size: .6em;
+	}
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (max-width: 767.98px)
+{
+	.marketing {
+		font-size: .5em;
+	}
+	.ach-video {
+	height: 250px;
+
+}
+.achievments {
+		padding: 10px 0;
+	}
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px)
+{
+	.marketing {
+		font-size: .4em;
+	}
+	.ach-featurettes {
+	font-size: 1.2em;
+}
+.ach-video {
+	height: 150px;
+
+}
+}

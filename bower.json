@@ -1,0 +1,22 @@
+{
+  "name": "slacktribe",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dmitry"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+   "dependencies": {
+    "normalize.css": "*",
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}

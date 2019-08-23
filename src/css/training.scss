@@ -1,0 +1,141 @@
+.offer_black
+{
+    color: white;
+    background-color: rgba(0,0,0,.8);
+}
+.offers
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    text-align: center;
+
+
+
+    justify-content: flex-start;
+    align-content: center;
+}
+.offers_container
+{
+    font-size: 2.5em;
+
+    padding: 30px 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.offers_category
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.offers_category_name
+{
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3em;
+
+    width: 100%;
+
+    text-align: center;
+}
+.offers_item
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+
+    text-align: center;
+
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+.offers_item_name
+{
+    display: flex;
+    width: 50%;
+
+    justify-content: center;
+    align-content: flex-start;
+}
+.offers_item_picture
+{
+    display: flex;
+
+    width: 98%;
+
+    justify-content: center;
+    align-content: flex-start;
+}
+.offers_item_text
+{
+    font-size: 1.2em;
+
+    display: flex;
+}
+.container_vk {
+    width: 50%;
+    height: 100%;
+}
+#vk_groups iframe { 
+max-width: 100% !important; 
+} 
+/* #vk_groups {
+    width: 100% !important;
+}
+#vk_groups iframe {
+     width: auto;
+} */
+@media screen and (max-width: 1199.98px)
+{
+    .offers_container {
+    font-size: .9em;
+}
+.offers_container
+{
+padding-bottom: 12%;
+}
+}
+// Средние девайсы («таблетки», < 992px) 
+@media screen and (max-width: 992px)
+{
+    .offers_container {
+    font-size: .8em;
+}
+.offers_container
+{
+padding-bottom: 17%;
+}
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (max-width: 769.98px)
+{
+    .offers_container {
+    font-size: .7em;
+}
+.offers_container
+{
+padding-bottom: 30%;
+}
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px)
+{
+    .offers_container {
+    font-size: .6em;
+}
+} 

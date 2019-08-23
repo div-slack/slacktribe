@@ -1,0 +1,207 @@
+ .footer
+{
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    height: 400px;
+
+    flex-wrap: nowrap;
+}
+.footer_logo
+{
+    position: absolute;
+    left: 50%;
+
+    width: 350px;
+    margin-top: 25px;
+    margin-left: -175px;
+}
+
+
+.footer2
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+    height: 100%;
+    padding-right: 10%;
+
+    background-color: black;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer1
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+    padding-left: 10%;
+
+    background-color: white;
+
+    justify-content: space-around;
+}
+.contacts-container
+{
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    justify-content: space-around;
+    font-size: .8em;
+}
+.contacts-label
+{
+    font-size: 4em;
+
+    color: black;
+}
+.contacts
+{
+    font-size: 1.4em;
+}
+.contacts_name
+{
+    font-size: 1.2em;
+}
+
+#toTop
+{
+    display: flex;
+
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    border-radius: 220px;
+    background: white;
+}
+#toTop img
+{
+    width: 100%;
+}
+#toTop:hover
+{
+    filter: invert(100%);
+}
+
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media screen and (max-width: 1199.98px)
+{
+    .footer
+    {
+        height: 300px;
+    }
+    .footer_logo
+    {
+        width: 250px;
+        margin-top: 25px;
+        margin-left: -125px;
+    }
+    #toTop
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .contacts-container
+    {
+        font-size: .7em;
+    }
+}
+// Средние девайсы («таблетки», < 992px) 
+@media screen and (max-width: 992px)
+{
+    .footer
+    {
+        height: 250px;
+    }
+    .footer_logo
+    {
+        width: 200px;
+        margin-top: 25px;
+        margin-left: -100px;
+    }
+    #toTop
+    {
+        width: 150px;
+        height: 150px;
+    }
+    .contacts-container
+    {
+        font-size: .5em;
+    }
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (max-width: 767.98px)
+{
+    .footer
+    {
+        height: 200px;
+    }
+    .footer_logo
+    {
+        width: 150px;
+        margin-top: 25px;
+        margin-left: -75px;
+    }
+    #toTop
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .contacts-container
+    {
+        font-size: .45em;
+    }
+    .footer2
+{
+padding-right: 5%;
+}
+.footer1
+{
+padding-left: 5%;
+}
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px)
+{
+    .footer
+    {
+        height: 150px;
+    }
+    .footer_logo
+    {
+        width: 100px;
+        margin-top: 25px;
+        margin-left: -50px;
+    }
+    #toTop
+    {
+        width: 75px;
+        height: 75px;
+    }
+    .contacts-container
+    {
+        font-size: .25em;
+    }
+    .footer2
+{
+padding-right: 15px;
+}
+.footer1
+{
+padding-left: 15px;
+}
+}

@@ -1,0 +1,63 @@
+.insta {
+	width: 100%;
+	background-color: rgba(255,255,255,.8);
+	padding-top: 30px;
+}
+.instaimg {
+	margin-bottom: 30px;
+	width: 350px;
+	opacity: 1;
+}
+.instaimg img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.instaimg:hover {
+	opacity: .9;
+}
+.gallery {
+	margin-top: 30px;
+}
+.insta-link a {
+	color: black;
+}
+.insta-link a:hover {
+	text-decoration: underline;
+}
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media screen and (max-width: 1199.98px)
+{
+}
+// Средние девайсы («таблетки», < 992px) 
+@media screen and (max-width: 992px)
+{
+	.instaimg {
+width: 33.3%;	
+}
+}
+// Малые девайсы («ландшафтные», < 768px)
+@media screen and (max-width: 767.98px)
+{.insta-link a {
+		font-size: .8em;
+}
+.instaimg {
+	width: 50%;
+}
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px)
+{.instaimg {
+	width: 100%;
+}
+	.insta-link a {
+		font-size: .4em;
+}
+.insta {
+padding-top: 0;
+}
+.gallery {
+	margin-top: 10px;
+}
+}
