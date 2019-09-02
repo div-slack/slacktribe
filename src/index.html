@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="yandex-verification" content="aa31b9ba5c96bf00" />
+    <link rel="icon" href="lg.png" type="image/png">
     <link rel="stylesheet" href="css/main.css">
-    <title>Slackline Tribe</title>
+    <title>Slackline Tribe - слэклайн в Москве</title>
   </head>
   <body>
     //= template/header.html
     //= template/modal-form.html
-    <div class="content">
       <div id="carouselExampleSlidesOnly" class="carousel slide changecarousel" data-ride="carousel" data-interval="5000" data-pause="false">
       <div class="textWelcome">
       <div class="textWelcome_background"></div>
@@ -94,13 +95,40 @@
       </div>
       </section>
       <section class="insta">
+
       <div class="container">
       <h2 class=" display-4 font-weight-bold text-uppercase insta-link"><a href="https://www.instagram.com/slackline_tribe_moscow/">#наш&nbsp;инстаграм</a></h2>
       <div class="row gallery" id="instafeed"></div>
       </div>
       </section>
-    </div>
     //= template/footer.html
     <script src="js/main.js"></script>
+    <script>      var userFeed = new Instafeed({
+        get: 'user',
+        userId: '7874973396',
+        limit: 8,
+        resolution: 'standard_resolution',
+        accessToken: '7874973396.09ce46c.a5ebfaa3ab39495c98bb8c29e900a54b',
+        sortBy: 'most-liked',
+        template: '<div class="col-lg-3 instaimg"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+    });
+
+
+    userFeed.run();</script>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55152736, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55152736" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   </body>
 </html>

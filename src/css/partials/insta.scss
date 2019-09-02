@@ -6,7 +6,6 @@
 .instaimg {
 	margin-bottom: 30px;
 	width: 350px;
-	opacity: 1;
 }
 .instaimg img {
 	height: 100%;
@@ -14,7 +13,9 @@
 	object-fit: cover;
 }
 .instaimg:hover {
-	opacity: .9;
+		img {
+			height: 101% !important;
+		}
 }
 .gallery {
 	margin-top: 30px;

@@ -136,14 +136,16 @@
     }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 500px)
 {
-    .header
+    .navbar > .team
     {
-        flex-direction: row;
-
-        justify-content: space-between;
+        display: none;
     }
+}
+// Большие девайсы (большие десктопы, < 1200px)
+@media screen and (max-width: 1199.98px)
+{
     .navul
     {
         font-size: 1.8em;
@@ -180,20 +182,6 @@
                 opacity: 1;
             }
         }
-    }
-}
-@media screen and (max-width: 500px)
-{
-    .navbar > .team
-    {
-        display: none;
-    }
-}
-// Большие девайсы (большие десктопы, < 1200px)
-@media screen and (max-width: 1199.98px)
-{
-    .navul {
-        margin-left: 50px;
     }
 }
 // Средние девайсы («таблетки», < 992px) 

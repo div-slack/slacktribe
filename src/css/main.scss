@@ -1,6 +1,5 @@
 @import "../../bower_components/bootstrap/dist/css/bootstrap.css";
 @import "partials/reset.scss";
-@import "partials/magnific-popup.scss";
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,300,400,500,700,900&display=swap&subset=cyrillic');
 @import "index.scss";
 @import "training.scss";
@@ -25,8 +24,7 @@ a {
 
 }
 a:hover {
-    opacity: .8;
-    color: black;
+    color: grey;
     text-decoration: none;
 }
 .container {
