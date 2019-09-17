@@ -15,11 +15,9 @@
 }
 .offers_container
 {
-    font-size: 2.5em;
     background-color: rgba(255,255,255,.9);
 
-    padding: 30px 0;
-    padding-bottom: 5%;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +37,7 @@
 
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 .offers_category_name
 {
@@ -48,45 +46,33 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 3.7em;
+    margin: 30px auto;
 
     width: 100%;
 
     text-align: center;
 }
-.offers_item
-{
-    display: flex;
-    flex-direction: column;
-
-    width: 50%;
-
-    text-align: center;
-
-    justify-content: flex-start;
-    align-content: flex-end;
-}
 .offers_item_name
 {
-    display: flex;
-    width: 50%;
+    display: inline-block;
+    width: 49%;
+     font-size: 2em;
+    text-align: center;
 
-    justify-content: center;
-    align-content: flex-start;
+
 }
 .offers_item_picture
 {
-    display: flex;
 
-    width: 98%;
+    width: 49%;
+    object-fit: scale-down;
+    margin: 30px auto;
 
-    justify-content: center;
-    align-content: flex-start;
 }
 .offers_item_text
 {
-    font-size: 1.2em;
+    font-size: 2em;
 
     display: flex;
 }
@@ -100,35 +86,45 @@
 }
 @media screen and (max-width: 1199.98px)
 {
-    .offers_container {
-    font-size: .9em;
-}
-#collapse1 {
+.offers_category {
     
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: space-around;
     align-items: center;
+}
     .container_vk {
     width: 100%;
     height: 100%;
 }
+.offers_item_name
+{
+    width: 100%;
+}
+.offers_item_picture
+{
+    width: 100%;
+}
+.offers_category_name
+{
+margin: 10px auto;
+}
+.offers_item_picture
+{
+margin: 10px auto;
+}
+.container_vk {
+    margin: 10px auto;
 
 }
-.offers_container
-{
-padding-bottom: 12%;
-}
+
 }
 // Средние девайсы («таблетки», < 992px) 
 @media screen and (max-width: 992px)
 {
     .offers_container {
-    font-size: .8em;
+    font-size: .9em;
 }
-.offers_container
-{
-padding-bottom: 17%;
-}
+
 }
 // Малые девайсы («ландшафтные», < 768px)
 @media screen and (max-width: 769.98px)
@@ -136,15 +132,12 @@ padding-bottom: 17%;
     .offers_container {
     font-size: .7em;
 }
-.offers_container
-{
-padding-bottom: 30%;
-}
+
 }
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px)
 {
     .offers_container {
-    font-size: .6em;
+    font-size: .4em;
 }
 } 

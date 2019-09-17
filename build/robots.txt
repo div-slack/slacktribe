@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow:
+Host: slackline-tribe.ru
+Sitemap: http://slackline-tribe.ru/sitemap.xml

@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="yandex-verification" content="aa31b9ba5c96bf00" />
-    <link rel="icon" href="lg.png" type="image/png">
+    <link rel="icon" href="img/lg.png" type="image/png">
     <link rel="stylesheet" href="css/main.css">
     <title>Slackline Tribe - слэклайн в Москве</title>
   </head>
   <body>
-    <header class="header ">
-               <nav class=" navbar fixed-top navbar-expand-xl navbar-light bg-light container-fluid">
+    <header class="header">
+               <nav class=" navbar  navbar-expand-xl navbar-light bg-light container-fluid">
                   <a class="navbar-brand logo align-middle" href="index.html" class="d-inline-block align-top"><img src="img/logo.png"></a>
                   <div class="team " id="team">
                       <h3 class="name align-text-top">Slackline&nbspTribe</h3>
@@ -42,7 +42,7 @@
                       <li class="nav-item">
                         <a class="nav-link" href="shop.html">Магазин</a>
                       </li>
-                        <li class="nav-item"><button type="button" class="btn btn-dark subscribe-button" data-toggle="modal" data-target="#exampleModal">Запись</button>
+                        <li class="nav-item"><button type="button" class="btn btn-dark subscribe-button" data-toggle="modal" data-target="#exampleModal">Написать нам</button>
                         </li>
                     </ul>
                   </div>
@@ -60,13 +60,20 @@
     		      <div class="modal-body">
     		        <form action="email.php" method="post">
     		          <div class="form-group">
-    		            <input type="text" name="fio" class="form-control" id="client-name" placeholder="Имя и фамилия" required autocomplete="off">
-    		            <input type="text" name="phone" class="form-control" id="client-phone" placeholder="Телефон" required autocomplete="off">
-    		            <input type="email" name="email" class="form-control" id="client-mail" placeholder="@mail" autocomplete="off">
+    		            <input type="text" name="fio" class="form-control" id="client-name" placeholder="Имя" required autocomplete="off">
+    		            <input type="tel" name="phone" class="form-control" id="client-phone" placeholder="Телефон" required autocomplete="off">
+    		            <input type="email" name="email" class="form-control" id="client-mail" placeholder="e-mail" autocomplete="off">
+    		            <select name="reason" id="client-reason" size="1" style="width: 100%;">
+    		            	<option value="training" >Тренировки</option>
+    		            	<option value="event">Мероприятие</option>
+    		            	<option value="product">Товары</option>
+    		            	<option value="consulting" selected>Консультация</option>
+    		            	<option value="another">Другое</option>
+    		            </select>
     		          </div>
     		         <div class="form-group">
-    		           <label for="message-text" class="col-form-label">Комментарий:</label>
-    		           <textarea class="form-control" id="message-text"></textarea>
+    		           <label for="message-text" class="col-form-label">Сообщение:</label>
+    		           <textarea class="form-control" name="message" id="message-text" style="min-height: 100px;"></textarea>
     		         </div>
     		        
     		      </div>
@@ -139,11 +146,13 @@
       <div class="row featurette">
       <div class="col-md-7 order-md-2 flex-column flex-fill align-items-center justify-content-start d-flex">
       <h2 class="featurette-heading  text-info ach-text ach-label">Сложные и интересные проекты </h2>
-      <p class="lead ach-text">Более 60 хайлайн проектов разной степени сложности, среди которых было множество рекордов России по навеске и прохождению. Множество проектов получило международное признание из-за сложности реализацииb. Одни из первых в Москве, кто начал устанавливать хайлайны между любыми обЪектами.</p>
+      <p class="lead ach-text">Более 60 хайлайн проектов разной степени сложности, среди которых было множество рекордов России по навеске и прохождению. Множество проектов получило международное признание из-за сложности реализации. Одни из первых в Москве, кто начал устанавливать хайлайны между любыми объектами.</p>
       </div>
       <div class="col-md-5 order-md-1 d-flex flex-column justify-content-center">
       <iframe  class="ach-video" src="https://www.youtube.com/embed/nIUmH6eoRAE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="kagin">Проект <a href="https://vk.com/kaginmaksim" class="shop-link">Максима Кагина</a> при участии нашей команды</p>
       </div>
+
       </div>
       
       <hr class="featurette-divider">

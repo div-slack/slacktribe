@@ -32,6 +32,12 @@
 .lead {
     font-size: 1.7em;
 }
+.kagin {
+	position: absolute; 
+	bottom: -10px; 
+	font-size: 15px; 
+	vertical-align: top;
+}
 // Большие девайсы (большие десктопы, < 1200px)
 @media screen and (max-width: 1199.98px)
 {
@@ -40,6 +46,11 @@
 	}
 	.achievments {
 		padding: 20px 0;
+	}
+	.kagin {
+		bottom: -15px; 
+	font-size: 10px;
+
 	}
 }
 // Средние девайсы («таблетки», < 992px) 

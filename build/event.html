@@ -4,12 +4,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="css/main.css">
-      <link rel="icon" href="lg.png" type="image/png">
+      <link rel="icon" href="img/lg.png" type="image/png">
       <title>Slackline Tribe - слэклайн в Москве</title>
     </head>
     <body>
-      <header class="header ">
-                 <nav class=" navbar fixed-top navbar-expand-xl navbar-light bg-light container-fluid">
+      <header class="header">
+                 <nav class=" navbar  navbar-expand-xl navbar-light bg-light container-fluid">
                     <a class="navbar-brand logo align-middle" href="index.html" class="d-inline-block align-top"><img src="img/logo.png"></a>
                     <div class="team " id="team">
                         <h3 class="name align-text-top">Slackline&nbspTribe</h3>
@@ -41,7 +41,7 @@
                         <li class="nav-item">
                           <a class="nav-link" href="shop.html">Магазин</a>
                         </li>
-                          <li class="nav-item"><button type="button" class="btn btn-dark subscribe-button" data-toggle="modal" data-target="#exampleModal">Запись</button>
+                          <li class="nav-item"><button type="button" class="btn btn-dark subscribe-button" data-toggle="modal" data-target="#exampleModal">Написать нам</button>
                           </li>
                       </ul>
                     </div>
@@ -59,13 +59,20 @@
       		      <div class="modal-body">
       		        <form action="email.php" method="post">
       		          <div class="form-group">
-      		            <input type="text" name="fio" class="form-control" id="client-name" placeholder="Имя и фамилия" required autocomplete="off">
-      		            <input type="text" name="phone" class="form-control" id="client-phone" placeholder="Телефон" required autocomplete="off">
-      		            <input type="email" name="email" class="form-control" id="client-mail" placeholder="@mail" autocomplete="off">
+      		            <input type="text" name="fio" class="form-control" id="client-name" placeholder="Имя" required autocomplete="off">
+      		            <input type="tel" name="phone" class="form-control" id="client-phone" placeholder="Телефон" required autocomplete="off">
+      		            <input type="email" name="email" class="form-control" id="client-mail" placeholder="e-mail" autocomplete="off">
+      		            <select name="reason" id="client-reason" size="1" style="width: 100%;">
+      		            	<option value="training" >Тренировки</option>
+      		            	<option value="event">Мероприятие</option>
+      		            	<option value="product">Товары</option>
+      		            	<option value="consulting" selected>Консультация</option>
+      		            	<option value="another">Другое</option>
+      		            </select>
       		          </div>
       		         <div class="form-group">
-      		           <label for="message-text" class="col-form-label">Комментарий:</label>
-      		           <textarea class="form-control" id="message-text"></textarea>
+      		           <label for="message-text" class="col-form-label">Сообщение:</label>
+      		           <textarea class="form-control" name="message" id="message-text" style="min-height: 100px;"></textarea>
       		         </div>
       		        
       		      </div>
@@ -80,23 +87,24 @@
       		</div>
       		</form>
       <div class="offers content">
-        <div class="offers_container offer_black" data-toggle="collapse" data-target="#collapse1" role="button">
-            <div class="container">
-         <h1 class="offers_category_name aligns-self-center" >Организация мероприятий</h1>
-           <div class="offers_category collapse show" id="collapse1">
-               <div class="offers_item">
-                   <h2 class="offers_item_name">Слэклайн площадка</h2>
-                   <img class="offers_item_picture" src="img/sl1.jpg">
-                   <p class="offers_item_text">Организуем слэклайн площадку на любом мероприятии. Установим слэклайны, проведём мастер-классы.</p>
-               </div>
-               <div class="offers_item">
-                   <h2 class="offers_item_name">Хайлайн шоу</h2>
-                   <img class="offers_item_picture" src="img/hl2.jpg">
-                   <p class="offers_item_text">Установим хайлайн между двумя высокими объектами и устроим незабываемое шоу! Система навески абсолютна безопасна, а трюки на большой высоте выглядят очень зрелищно.</p>
-               </div>
-            </div>
+        <div class="offers_container offer_black" data-toggle="collapse" data-target="#collapse4" role="button">
+        <div class="container">
+           <h1 class="offers_category_name" >Хайлайн шоу</h1>
+           <div class="offers_category collapse show flex-row-reverse" id="collapse4">
+              <h6 class="offers_item_name">Установим хайлайн между двумя высокими объектами и устроим незабываемое шоу! Система навески абсолютно безопасна, а трюки на большой высоте выглядят очень зрелищно.</h6>
+              <img src="img/hl2.jpg" alt="Хайлайн шоу" class="offers_item_picture">
+           </div>
+        </div>
+       </div>
+       <div class="offers_container" data-toggle="collapse" data-target="#collapse5" role="button">
+              <div class="container">
+           <h1 class="offers_category_name" >Слэклайн площадка</h1>
+           <div class="offers_category collapse show" id="collapse5">
+            <h6 class="offers_item_name">Организуем слэклайн площадку на любом мероприятии. Установим слэклайны, проведём мастер-классы.</h6>
+            <img src="img/sl1.jpg" alt="Слэклайн площадка" class="offers_item_picture">
            </div>
            </div>
+       </div>
       </div>
        <footer class="footer fixed-bottom">
                 <div class="footer1">
